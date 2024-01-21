@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.example.ecommerce.orderservice.models.Order" table="ORDERS">
+        <id name="id" column="ORDER_ID" type="long">
+            <generator class="increment"/>
+        </id>
+        <property name="itemName" column="ITEM_NAME"/>
+        <property name="itemQuantity" column="ITEM_QUANTITY" />
+    </class>
+</hibernate-mapping>
